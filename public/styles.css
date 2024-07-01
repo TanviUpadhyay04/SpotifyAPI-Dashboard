@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header select {
+    padding: 8px;
+  }
+  
+  section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+  }
+  
+  canvas {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .summary-statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100%; 
+  }
+  
+  .top-artists {
+    flex-basis: 50%; 
+  }
+  
+  .listening-time {
+    flex-basis: 50%;
+  }
+  
+  .favorite-day {
+    flex-basis: 20%;
+  }
+  
+  .summary-statistics {
+    flex-basis: 80%;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .favorite-day {
+      flex-basis: 100%;
+    }
+  
+    .summary-statistics {
+      flex-basis: 100%;
+    }
+  }
+  
